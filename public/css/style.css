@@ -1,0 +1,46 @@
+.icon-block {
+  padding: 0 15px;
+}
+
+.icon-block .material-icons {
+	font-size: inherit;
+}
+
+@font-face {
+    font-family: Merriweather-Regular;
+    src: url(fonts/Merriweather-Regular.ttf);
+}
+
+body {
+	font-family: Merriweather-Regular;
+}
+
+h1 {
+	/*font-size: 110px;*/
+	color: #1a1a1a;
+	margin:0;
+	font-size: 6vw;
+	text-align: center;
+}
+
+.intro p {
+	/* font-size: 16px; */
+	color: #1a1a1a;
+}
+
+.container {
+    width: 80%;
+}
+
+.text_inside_image {
+	 font-size: 8vw;
+	 padding-top: 50%;
+	 color: #7ceadb;
+ }
+
+ #logo_paragraph {
+ 	color: #1a1a1a;
+ 	padding-left: 60%;
+ 	font-size: 1vw;
+ 	text-align: right;
+ }
