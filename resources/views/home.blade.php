@@ -18,7 +18,7 @@
         <script type="text/javascript">
             $(document).ready(function() {
                 $('#fullpage').fullpage({
-                    anchors: ['begin', 'people', 'locations'],
+                    anchors: ['start', 'persons', 'places'],
                     sectionsColor: ['#fff', '#fff', '#fff'],
                     navigation: true,
                     navigationPosition: 'right',
@@ -36,9 +36,7 @@
                     <div class="row">
                         <div class="intro">
                             <div class="col s10 m12 l12 offset -s2 -m3 -l3">
-                                @foreach ($people as $people)
-                                <h1 id="logo_name">Journey Wonders, {{ $people->last_name }}</h1>
-                                @endforeach
+                                <h1 id="logo_name">Journey Wonders</h1>
                             </div>
 
                             <div class="col s6 m10 l10 offset-s3 -m3 -l3">
@@ -53,11 +51,11 @@
                 <div class="container">
                     <div class="row">
                         <div class="col s12 m9 l8">
-                            <a href="people.html"><img class="responsive-img" data-src="css/images/header_people.jpg"></a>
+                            <a href="persons"><img class="responsive-img" data-src="css/images/header_people.jpg"></a>
                         </div>
 
                         <div class="col s12 m3 pull-m2 -l6">
-                            <a href="people.html"><p class="text_inside_image">Persons</p></a>
+                            <a href="persons"><p class="text_inside_image">Persons</p></a>
                         </div>
                     </div>
                 </div>
@@ -67,11 +65,11 @@
                 <div class="container">
                     <div class="row">
                         <div class="col s3 push-s1 -m2 -l4">
-                            <a href="locations.html"><p class="text_inside_image">Places</p></a>
+                            <a href="places"><p class="text_inside_image">Places</p></a>
                         </div>
 
                         <div class="col s9 l8">
-                            <a href="locations.html"><img class="responsive-img" data-src="css/images/header_places.jpg"></a>
+                            <a href="places"><img class="responsive-img" data-src="css/images/header_places.jpg"></a>
                         </div>
                     </div>
                 </div>
