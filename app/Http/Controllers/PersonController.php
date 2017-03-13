@@ -2,23 +2,22 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Support\Facades\DB;
 use Illuminate\Http\Request;
+use App\Person;
 
 class PersonController extends Controller
 {
-    public function index()
+    public function index(Request $request)
     {
-        return view('persons');
+        // te pec idejas vajag atlasit tikai pirmos divus ierakstus - where condition
+        $people = Person::paginate(2);
 
-                //$people = Person::all();
-        //return view('index');       
-        /*$people = Person::where('first_name', 'Kristaps')
-                ->orderBy('first_name', 'desc')
-                ->take(2)
-                ->get();
-    
-        foreach ($people as $person) {
-            echo $person->first_name;
-        }*/
+        if ($request->ajax()) {
+            $view = view('data2',compact('people'))->render();
+            return response()->json(['html'=>$view]);
+        } else {
+            return view('persons',compact('people'));
+        }
     }
 }
