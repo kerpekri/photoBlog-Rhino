@@ -11,5 +11,3 @@ Route::resource('/places', 'PlaceController', ['only' => [
 Route::resource('/persons', 'PersonController', ['only' => [
     'index'
 ]]);
-
-Route::get('my-post', 'PostController@myPost');

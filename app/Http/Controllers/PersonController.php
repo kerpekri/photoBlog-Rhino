@@ -14,10 +14,10 @@ class PersonController extends Controller
         $people = Person::paginate(2);
 
         if ($request->ajax()) {
-            $view = view('data2',compact('people'))->render();
+            $view = view('data',compact('people'))->render();
             return response()->json(['html'=>$view]);
-        } else {
-            return view('persons',compact('people'));
         }
+        
+        return view('persons',compact('people'));
     }
 }
