@@ -36,7 +36,7 @@
                     <div class="row">
                         <div class="intro">
                             <div class="col s10 m12 l12 offset -s2 -m3 -l3">
-                                <h1 id="logo_name">Journey Wonders</h1>
+                                <h1 id="large_logo_name">Journey Wonders</h1>
                             </div>
 
                             <div class="col s6 m10 l10 offset-s3 -m3 -l3">

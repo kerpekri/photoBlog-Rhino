@@ -9,5 +9,5 @@ Route::resource('/places', 'PlaceController', ['only' => [
 ]]);
 
 Route::resource('/persons', 'PersonController', ['only' => [
-    'index'
+    'index', 'show'
 ]]);

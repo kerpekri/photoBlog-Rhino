@@ -20,4 +20,11 @@ class PersonController extends Controller
         
         return view('persons',compact('people'));
     }
+
+    public function show($personId)
+    {
+        //$people = Person::paginate(2);
+        //return view('persons',compact('people'));
+        return view('person');
+    }
 }

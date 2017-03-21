@@ -15,8 +15,7 @@ body {
 	font-family: Merriweather-Regular;
 }
 
-h1 {
-	/*font-size: 110px;*/
+h1#large_logo_name {
 	color: #1a1a1a;
 	margin:0;
 	font-size: 6vw;
@@ -38,9 +37,37 @@ h1 {
 	 color: #7ceadb;
  }
 
- #logo_paragraph {
- 	color: #1a1a1a;
- 	padding-left: 60%;
- 	font-size: 1vw;
- 	text-align: right;
- }
+#logo_paragraph {
+	color: #1a1a1a;
+	padding-left: 60%;
+	font-size: 1vw;
+	text-align: right;
+}
+
+/* Persons & places pages */
+
+h1#medium_logo_name {
+	color: #1a1a1a;
+	margin:0;
+	font-size: 3vw;
+	text-align: center;
+	padding: 3vw 0 3vw 0;
+}
+
+p#intro {
+	text-align: center;
+}
+
+a#specific_person, p {
+	text-align: center;
+}
+
+a#specific_person {
+	color: #0b817d;
+	text-decoration: underline;
+}
+
+.intro_text_block {
+	padding-top: 6vw;
+}
+/* End persons page */
